@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: sbwebappcontainer
-          image: salman1091/sb-log-app
+          image: salman1091/sb-log-app:v1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
