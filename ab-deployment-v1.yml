@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: abtest-v1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: abtest
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: abtest
+        version: v1
+    spec:
+      containers:
+      - name: abtest
+        image: salman1091/abtest:v1
+        ports:
+        - containerPort: 80
