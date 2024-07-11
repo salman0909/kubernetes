@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: abtest-v1
+spec:
+  selector:
+    app: abtest
+    version: v1
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: abtest-v2
+spec:
+  selector:
+    app: abtest
+    version: v2
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
