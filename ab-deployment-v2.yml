@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: abtest
-        image: salman1091/abtest:v2
+        image: eyesoncloud/abtest:v2
         ports:
         - containerPort: 80
