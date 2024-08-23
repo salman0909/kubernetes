@@ -15,7 +15,7 @@ spec:
     backendRefs:
     - name: canary-v1-service
       port: 80
-      weight: 90
+      weight: 100
     - name: canary-v2-service
       port: 80
-      weight: 10
+      weight: 0
